@@ -1,0 +1,33 @@
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #242424;
+    z-index: $loading-z-index;
+    display: flex;
+}
+
+.loading-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-content img{
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 25px;
+}
+
+.loading-content i{
+    margin-top: 2px;
+    font-size: 28px;
+    color: #ababab;
+    animation: spin forwards linear infinite 2s;
+}
